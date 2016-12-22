@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Scale</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+<div class="container">
+	<h1>Scale your CSS</h1>
+	<p>Scale px and em units</p>
+	<div class="row" id="content">
+		<div class="col-xs-12 col-sm-6">
+			<form action="javascript:scaleCSS()">
+				<div class="form-group">
+					<label for="input">Input CSS</label>
+					<textarea class="form-control" id="input" rows="20"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="factor">Scale to:</label>
+					<input type="number" name="factor" id="factor" min="1" max="500" value="100">%
+				</div>
+				<div class="form-group">				
+					<div class="form-check checkbox-inline">
+						<label class="form-check-label">
+							<input type="checkbox" name="width-check" id="width" class="form-check-input property" checked>
+							width
+						</label>
+					</div>		
+					<div class="form-check checkbox-inline">
+						<label class="form-check-label">
+							<input type="checkbox" name="height-check" id="height" class="form-check-input property" checked>
+							height
+						</label>
+					</div>									
+					<div class="form-check checkbox-inline">
+						<label class="form-check-label">
+							<input type="checkbox" name="margin-check" id="margin" class="form-check-input property" checked>
+							margin
+						</label>
+					</div>
+					<div class="form-check checkbox-inline">
+						<label class="form-check-label">
+							<input type="checkbox" name="padding-check" id="padding" class="form-check-input property" checked>
+							padding
+						</label>
+					</div>
+					<br>
+					<div class="form-check checkbox-inline">
+						<label class="form-check-label">
+							<input type="checkbox" name="position-check" id="position" class="form-check-input property" checked>
+							top, right, bottom, left
+						</label>
+					</div>
+					<div class="form-check checkbox-inline">
+						<label class="form-check-label">
+							<input type="checkbox" name="font-size-check" id="font-size" class="form-check-input property" checked>
+							font-size
+						</label>
+					</div>																														
+				</div>
+				<button type="submit" class="btn btn-primary" id="submit">Scale</button>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<form>
+				<div class="form-group">
+					<label for="output">Scaled CSS</label>
+					<textarea class="form-control" id="output" rows="20"></textarea>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
