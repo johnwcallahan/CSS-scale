@@ -1,4 +1,4 @@
-# CSS-scale
+# CSS-scaler
 
 #### A simple tool to scale PX and EM units of select properties. 
 
